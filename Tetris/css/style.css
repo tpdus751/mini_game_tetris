@@ -1,0 +1,87 @@
+* { /* css 초기화 */
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none; /* 리스트 스타일 : 점을 없애기 위해 */
+}
+
+body {
+    height: 100%;
+    overflow: hidden; /* 넘치는 부분 스크롤이 생기지 않도록 */
+}
+
+.game-text {
+    display: none; /* 평상시에는 게임종료가 안보이도록 */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 세로로 가도록? */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 50px;
+}
+
+.game-text > button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: salmon;
+    border: none;
+    cursor: pointer;
+}
+
+.score { 
+    text-align: center; /* 점수 텍스트 가운데로 */
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
+
+.playground > ul{ /* playground에 들어있는 ul에 해당 */ 
+    border: 1px solid #333;
+    width: 250px; /* 250px로 강제 조정 */
+    margin: 0 auto;
+}
+
+.playground > ul > li { /* playground에 들어있는 ul의 li에 해당 */ 
+    width: 100%;
+    height: 25px; /* 한칸이 25 pixel로 */
+}
+
+.playground > ul > li > ul { /* playground에 들어있는 ul의 li의 ul에 해당 */ 
+    display: flex; /* 가로로 나열되도록 */ 
+}
+
+.playground > ul > li > ul > li { /* playground에 들어있는 ul의 li의 ul의 각각의 작은 li들에 해당, 즉 매트릭스*/
+    width: 25px; 
+    height: 25px; /* 가로, 세로 25 pixel로 */
+    outline: 1px solid #ccc; /* 약간의 구분 */
+}
+
+.tree {
+    background: #67c23a;
+}
+
+.square {
+    background: blue;
+}
+
+.bar {
+    background: salmon;
+}
+
+.zee {
+    background: #e6a23c;
+}
+
+.elLeft {
+    background: #8e44ad;
+}
+
+.elRight {
+    background: #16a085;
+}
